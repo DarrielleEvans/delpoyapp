@@ -9,12 +9,12 @@ This setup allows us more customization privileges we desire to delpoy our URL S
 ** When trying to access /etc/nginx/sites-enabled/default, I was denied permission. I used sudo nano default to access the file using the superuser.
 
 ### Steps
-*** Step 1 - Create VPC 
-*** Step 2 - Create T.2 Medium instance in the public subnet. This allows the instance to receive a burst of extra cpu power if needed.
-*** Step 3 - Install python, nginx, and Jenkins.
-*** Step 4 - Configured a DataDog agent on the server.
-*** Step 5 - I had to edit the Jenkins file using get to add a clean stage to the build.
-*** Step 6 - Setup Alarms to monitor the server in Datadog
+* Step 1 - Create VPC 
+* Step 2 - Create T.2 Medium instance in the public subnet. This allows the instance to receive a burst of extra cpu power if needed.
+* Step 3 - Install python, nginx, and Jenkins.
+* Step 4 - Configured a DataDog agent on the server.
+* Step 5 - I had to edit the Jenkins file using get to add a clean stage to the build.
+* Step 6 - Setup Alarms to monitor the server in Datadog
 
 ### System Diagram
 
