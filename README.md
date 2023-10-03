@@ -1,12 +1,13 @@
 ## Purpose
 The purpose of the project is to deploy an application on an EC2.
 
-In previous deployments, I used Elastic Beanstalk to deploy the URL Shortener Application. In this deployment, we chose to use NGINX instead of Elastic Beanstalk. 
-This setup allows us more customization privileges we desire to delpoy our URL Shortener Application.
+I used Elastic Beanstalk to deploy the URL Shortener Application in previous deployments. In this deployment, we chose to use NGINX instead of Elastic Beanstalk. 
+This setup allows us more customization privileges than we desire to deploy our URL Shortener Application.
 
 
 ### Issue
-** When trying to access /etc/nginx/sites-enabled/default, I was denied permission. I used sudo nano default to access the file using the superuser.
+* I was denied permission When trying to access /etc/nginx/sites-enabled/default. I used sudo nano default to access the file using the superuser.
+* I setup the alarm on datadog to send an email when cpu is greater than 15%. However, I did not receive an email.
 
 ### Steps
 * Step 1 - Create VPC 
