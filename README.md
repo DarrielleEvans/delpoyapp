@@ -2,16 +2,16 @@
 The purpose of the project is to deploy an application on an EC2.
 
 I used Elastic Beanstalk to deploy the URL Shortener Application in previous deployments. In this deployment, we chose to use NGINX instead of Elastic Beanstalk. 
-This setup allows us more customization privileges than we desire to deploy our URL Shortener Application.
+This setup allows us more customization configurations and uses less memory while performing on a larger scale.
 
 
 ### Issue
-* I was denied permission When trying to access /etc/nginx/sites-enabled/default. I used sudo nano default to access the file using the superuser.
-* I setup the alarm on datadog to send an email when cpu is greater than 15%. However, I did not receive an email.
+* I was denied permission when accessing/etc/nginx/sites-enabled/default. I used sudo nano default to access the file using the superuser.
+* I set the alarm on Datadog to email when the CPU is higher than 15%. However, I have yet to receive an email.
 
 ### Steps
 * Step 1 - Create VPC 
-* Step 2 - Create T.2 Medium instance in the public subnet. This allows the instance to receive a burst of extra cpu power if needed.
+* Step 2 - Create T.2 Medium instance in the public subnet. This allows the instance to receive a burst of extra CPU power if needed.
 * Step 3 - Install python, nginx, and Jenkins.
 * Step 4 - Configured a DataDog agent on the server.
 * Step 5 - I had to edit the Jenkins file using get to add a clean stage to the build.
