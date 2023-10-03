@@ -4,6 +4,15 @@ The purpose of the project is to deploy an application on an EC2.
 I used Elastic Beanstalk to deploy the URL Shortener Application in previous deployments. In this deployment, we chose to use NGINX instead of Elastic Beanstalk. 
 This setup allows us more customization configurations and uses less memory while performing on a larger scale.
 
+## Technologies Used
+* VPC
+* Jenkins Server
+* GitHub
+* NGINX
+* AWS EC2
+* Subnets
+* Datadog
+* Python
 
 ### Issue
 * I was denied permission when accessing/etc/nginx/sites-enabled/default. I used sudo nano default to access the file using the superuser.
