@@ -27,6 +27,7 @@ This setup allows us more customization configurations and uses less memory whil
 * Step 6 - Setup Alarms to monitor the server in Datadog
 
 ### System Diagram
+![Deplopyment4](https://github.com/DarrielleEvans/deployApplication/assets/89504317/2a842256-3876-43ba-89c2-212533a24aa2)
 
 
 ### Optimization
